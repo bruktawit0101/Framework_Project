@@ -10,7 +10,6 @@ class TestRegisterNewUser:
 
     @pytest.mark.qactcid2
     def test_register_valid_new_user(self):
-
         '''
         Test is verify a valid user can register to the site.
         It generates a random email and password then registers the user.

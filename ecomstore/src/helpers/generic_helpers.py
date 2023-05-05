@@ -8,19 +8,11 @@ def generate_random_email_and_password(email_prefix='supersql', domain='gmail.co
 
     '''
 
-feature/branch20230418
     Generates a randome email and password combination.
-    
-    Generates a random email and password combination.
- master
     :param email_prefix:
     :param domain:
     :return: dictionary - A dictionary with keys 'email' and 'password'
     '''
- feature/branch20230418
-
-
- master
     length_of_string = 10
     random_letters = ''.join(random.sample(string.ascii_lowercase, length_of_string))
     email = f"{email_prefix}_{random_letters}@{domain}"
@@ -31,8 +23,5 @@ feature/branch20230418
     logger.debug(f"randomly generated email and password: {random_info}")
     return random_info
 if __name__ == '__main__':
- feature/branch20230418
-
- master
     generate_random_email_and_password()
 
