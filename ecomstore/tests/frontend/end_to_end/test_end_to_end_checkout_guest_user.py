@@ -1,11 +1,11 @@
 
 import pytest
-from LocalHost_store.src.pages.HomePage import HomePage
-from LocalHost_store.src.pages.Header import Header
-from LocalHost_store.src.pages.CartPage import CartPage
-from LocalHost_store.src.configs.MainConfigs import MainConfigs
-from LocalHost_store.src.pages.CheckOutPage import CheckOutPage
-from LocalHost_store.src.pages.OrderReceivedPage import OrderReceivedPage
+from ecomstore.src.pages.HomePage import HomePage
+from ecomstore.src.pages.Header import Header
+from ecomstore.src.pages.CartPage import CartPage
+from ecomstore.src.configs.MainConfigs import MainConfigs
+from ecomstore.src.pages.CheckOutPage import CheckOutPage
+from ecomstore.src.pages.OrderReceivedPage import OrderReceivedPage
 
 
 
@@ -64,7 +64,7 @@ class TestEndToEndCheckOutGuestUser:
 
        print(order_number)
 
-       breakpoint()
+
 
 
 

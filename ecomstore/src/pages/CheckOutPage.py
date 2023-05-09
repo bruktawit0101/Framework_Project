@@ -1,7 +1,7 @@
 
-from LocalHost_store.src.pages.Locators.CheckOutPageLocator import CheckOutPageLocator
-from LocalHost_store.src.selenium_extended.SeleniumExtended import SeleniumExtended
-from LocalHost_store.src.helpers.generic_helpers import generate_random_email_and_password
+from ecomstore.src.pages.Locators.CheckOutPageLocator import CheckOutPageLocator
+from ecomstore.src.selenium_extended.SeleniumExtended import SeleniumExtended
+from ecomstore.src.utilities.genericUtility import generate_random_email_and_password
 
 class CheckOutPage(CheckOutPageLocator):
 

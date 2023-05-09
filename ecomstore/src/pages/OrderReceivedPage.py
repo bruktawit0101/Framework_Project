@@ -1,6 +1,6 @@
 
-from LocalHost_store.src.pages.Locators.OrderReceivedPageLocators import OrderReceivedPageLocators
-from LocalHost_store.src.selenium_extended.SeleniumExtended import SeleniumExtended
+from ecomstore.src.pages.Locators.OrderReceivedPageLocators import OrderReceivedPageLocators
+from ecomstore.src.selenium_extended.SeleniumExtended import SeleniumExtended
 
 class OrderReceivedPage(OrderReceivedPageLocators):
 

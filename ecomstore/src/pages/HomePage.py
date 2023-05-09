@@ -1,7 +1,7 @@
 
-from LocalHost_store.src.pages.Locators.HomePageLocators import HomePageLocators
-from LocalHost_store.src.selenium_extended.SeleniumExtended import SeleniumExtended
-from LocalHost_store.src.configs.MainConfigs import MainConfigs
+from ecomstore.src.pages.Locators.HomePageLocators import HomePageLocators
+from ecomstore.src.selenium_extended.SeleniumExtended import SeleniumExtended
+from ecomstore.src.configs.MainConfigs import MainConfigs
 
 class HomePage(HomePageLocators):
 

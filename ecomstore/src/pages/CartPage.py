@@ -1,5 +1,5 @@
-from LocalHost_store.src.pages.Locators.CartPageLocators import CartPageLocators
-from LocalHost_store.src.selenium_extended.SeleniumExtended import SeleniumExtended
+from ecomstore.src.pages.Locators.CartPageLocators import CartPageLocators
+from ecomstore.src.selenium_extended.SeleniumExtended import SeleniumExtended
 
 class CartPage(CartPageLocators):
 
