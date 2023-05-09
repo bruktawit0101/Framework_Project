@@ -1,6 +1,6 @@
 
-from LocalHost_store.src.pages.Locators.MyAccountSignedInLocator import MyAccountSignedInLocators
-from LocalHost_store.src.selenium_extended.SeleniumExtended import SeleniumExtended
+from ecomstore.src.pages.Locators.MyAccountSignedInLocator import MyAccountSignedInLocators
+from ecomstore.src.selenium_extended.SeleniumExtended import SeleniumExtended
 
 class MyAccountSignedIn(MyAccountSignedInLocators):
     endpoint = '/my_account/'

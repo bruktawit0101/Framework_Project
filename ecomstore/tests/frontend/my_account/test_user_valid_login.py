@@ -1,7 +1,7 @@
 import pytest
-from LocalHost_store.src.pages.MyAccountSignedOut import MyAccountSignedOut
-from LocalHost_store.src.pages.MyAccountSignedIn import MyAccountSignedIn
-# from LocalHost_store.src.helpers.generic_helpers import generate_random_email_and_password
+from ecomstore.src.pages.MyAccountSignedOut import MyAccountSignedOut
+from ecomstore.src.pages.MyAccountSignedIn import MyAccountSignedIn
+
 
 pytestmarks = [pytest.mark.fe, pytest.mark.regression, pytest.mark.smoke, pytest.mark.my_account]
 @pytest.mark.usefixtures("init_driver")

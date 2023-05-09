@@ -1,7 +1,7 @@
 
-from LocalHost_store.src.pages.Locators.MyAccountSignedOutLocator import MyAccountSignedOutLocators
+from ecomstore.src.pages.Locators.MyAccountSignedOutLocator import MyAccountSignedOutLocators
 # from LocalHost_store.src.helpers.Config_helpers import get_base_url
-from LocalHost_store.src.selenium_extended.SeleniumExtended import SeleniumExtended
+from ecomstore.src.selenium_extended.SeleniumExtended import SeleniumExtended
 
 class MyAccountSignedOut(MyAccountSignedOutLocators):
 

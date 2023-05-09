@@ -1,6 +1,6 @@
 
-from LocalHost_store.src.pages.Locators.HeaderLocators import HeaderLocators
-from LocalHost_store.src.selenium_extended.SeleniumExtended import SeleniumExtended
+from ecomstore.src.pages.Locators.HeaderLocators import HeaderLocators
+from ecomstore.src.selenium_extended.SeleniumExtended import SeleniumExtended
 
 class Header(HeaderLocators):
 
