@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="543e9942-62bd-4b9f-9053-784f57bf782d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ecomstore/src/api_helpers/ProductsAPIHelper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecomstore/src/api_helpers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecomstore/src/dao/products_deo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecomstore/tests/backend/products/test_get_products_smoke.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Framework_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Framework_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecomstore/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/ecomstore/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecomstore/src/dao/customers_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecomstore/src/dao/customers_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecomstore/src/utilities/dbUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecomstore/src/utilities/dbUtility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecomstore/src/utilities/wooAPIUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecomstore/src/utilities/wooAPIUtility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecomstore/tests/backend/customers/test_create_customers_smoke.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecomstore/tests/backend/customers/test_create_customers_smoke.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QD36BWBNKEkemMY0FZnh4vASWP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="543e9942-62bd-4b9f-9053-784f57bf782d" name="Changes" comment="" />
+      <created>1684874150246</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684874150246</updated>
+    </task>
+    <servers />
+  </component>
+</project>

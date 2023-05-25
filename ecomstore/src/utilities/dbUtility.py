@@ -35,6 +35,7 @@ class DbUtility(object):
             cur.close()
         except Exception as e:
             raise Exception(f"Failed running sql: {sql} \n  Error: {str(e)}")
+
         finally:
             conn.close()
 
