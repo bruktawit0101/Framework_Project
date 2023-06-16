@@ -8,7 +8,7 @@ class CredentialUtility(object):
     @staticmethod
     def get_woo_api_keys():
 
-        wc_keys = os.environ.get('WOO_KEY')
+        wc_keys = os.environ.get("WOO_KEY")
         wc_secret = os.environ.get("WOO_SECRET")
 
         if not wc_keys or not wc_secret:

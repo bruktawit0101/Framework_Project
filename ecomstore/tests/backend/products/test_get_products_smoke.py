@@ -4,7 +4,7 @@ import pytest
 import logging as logger
 
 @pytest.mark.tcid25
-@pytest.mark.qactcid7
+@pytest.mark.qactcid11
 def test_get_product_by_id():
 
     # get product that exist from db

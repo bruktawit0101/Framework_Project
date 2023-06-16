@@ -86,7 +86,7 @@ if __name__ == '__main__':
     obj = WooAPIUtility()
     rs_api = obj.get('products')
     print(rs_api)
-    breakpoint()
+
 
 
 
