@@ -13,29 +13,34 @@ class ProductsAPIHelper:
     def call_list_product_by_id(self, product_id):
         return self.woo_api_utility.get(f"products/{product_id}")
 
-    def call_list_products(self, payload):
+    def call_list_products(self, payload=None, get_all=False, return_headers=False):
 
-        #if max number of products per page is not provided then use the max to reduce number of calls
-        # if not payload:
-        #     payload = {'per_page': 100}
-        # elif 'per_page' not in payload.keys():
-        #     payload['per_page'] = 100
+        if not payload:
+            payload = {'per_page': 100}
+        elif 'per_page' not in payload.keys():
+            payload['per_page'] = 100
 
-        return self.woo_api_utility.get('products', params=payload, return_headers=True)
-        # rs_api = self.woo_api_utility.get('products', params=payload, return_headers=True)
-        # total_number_of_pages = rs_api['headers']['X-WP-TotalPages']
+        rs_api = self.woo_api_utility.get('products', params=payload, return_headers=return_headers)
+        if not get_all:
+            return rs_api
+        else:
+            headers = rs_api['headers']
+        total_number_of_pages = headers['X-WP-TotalPages']
 
-        # all_products = []
-        # all_products.extend(rs_api['response_json']) # since the first page is fetched use that
-        #
-        # for i in range(2, int(total_number_of_pages) + 1): # start from 2 because this will be used for page number and page 1 is fetched already
-        #
-        #     logger.debug(f"List products page number: {i}")
-        #
-        #     payload['page'] = i
-        #     rs_api = self.woo_api_utility.get('products', params=payload, return_headers=True)
-        #     all_products.extend(rs_api['response_json'])
-        #
-        #     return all_products
+        all_products = []
+
+        # since the first page is fetched use that
+        all_products.extend(rs_api['response_json'])
+
+        # start from 2 because this will be used for page number and page 1 is fetched already
+        for i in range(2, int(total_number_of_pages) + 1):
+
+            logger.debug(f"List products page number: {i}")
+
+            payload['page'] = i
+            rs_api = self.woo_api_utility.get('products', params=payload, return_headers=True)
+            all_products.extend(rs_api['response_json'])
+
+        return {"response_json": all_products, "headers": headers}
 
 
