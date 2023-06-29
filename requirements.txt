@@ -1,0 +1,5 @@
+selenium==4.8.3
+pytest==7.3.0
+Pymysql==1.0.3
+woocommerce
+

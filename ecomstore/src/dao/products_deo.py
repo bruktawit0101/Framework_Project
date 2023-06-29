@@ -31,6 +31,17 @@ class ProductsDao:
 
         return self.db_helper.execute_select(sql)
 
+    def get_products_created_after_given_date(self, _date):
+        sql = f"""SELECT 
+    *
+FROM
+    {self.database}.{self.table_prefix}posts
+WHERE
+    post_type = "product"
+        AND post_modified > "{_date}"
+        ;"""
+
+        return self.db_helper.execute_select(sql)
 
 
 
