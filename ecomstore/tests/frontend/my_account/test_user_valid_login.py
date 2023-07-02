@@ -20,4 +20,3 @@ class TestUserValidLogin:
         my_account_o.click_on_login_btn()
         my_account_I.verify_user_is_signed_in()
 
-        breakpoint()

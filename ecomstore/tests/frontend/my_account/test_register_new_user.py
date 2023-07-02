@@ -31,7 +31,7 @@ class TestRegisterNewUser:
         # VERIFY USER IS REGISTERED
         my_acct_sin.verify_user_is_signed_in()
 
-        breakpoint()
+
 
 
 

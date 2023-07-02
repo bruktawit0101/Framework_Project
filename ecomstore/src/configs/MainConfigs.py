@@ -19,7 +19,7 @@ class MainConfigs:
         "dev": {},
         "test": {"db_host": "localhost",
                  "port": 8889,
-                 "database": "quicksite",
+                 "database": "quicksitedb",
                  "table_prefix": "wp_"
                  },
         "staging": {},
