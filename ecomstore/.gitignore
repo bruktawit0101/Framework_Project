@@ -1,0 +1,7 @@
+.pytest_cache/
+../.idea/workspace.xml
+../cred_variables.sh
+ ../credential_local_docker.env
+ **/__pycache__/
+
+
