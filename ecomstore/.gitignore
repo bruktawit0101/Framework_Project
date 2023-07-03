@@ -2,6 +2,6 @@
 ../.idea/workspace.xml
 ../cred_variables.sh
  ../credential_local_docker.env
- __pycache__/
+ **/__pycache__/
 
 
