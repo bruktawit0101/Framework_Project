@@ -5,7 +5,7 @@ from ecomstore.src.dao.customers_dao import CustomerDao
 from ecomstore.src.api_helpers.CustomersAPIHelper import CustomersAPIHelper
 import logging as logger
 
-pytestmarks = [pytest.mark.regression, pytest.mark.besmoke, pytest.mark.customers]
+pytestmarks = [pytest.mark.regression, pytest.mark.beregression, pytest.mark.besmoke, pytest.mark.customers]
 
 
 @pytest.mark.tcid29
@@ -128,7 +128,7 @@ def test_create_customer_names_should_be_empty_string_if_not_proveded():
     # make the call
 
     cust_obj = CustomersAPIHelper()
-    cust_api_info = cust_obj.call_create_customer(email=email, password=password)
+    cust_api_info = cust_obj.call_create_customers(email=email, password=password)
 
     assert cust_api_info['first_name'] == '', f"Creating user without providing name expected to create first_name='' but it was first_name={cust_api_info['first_name']}"
     assert cust_api_info['last_name'] == '', f"Creating user without providing name expected to create last_name='' but it was first_name={cust_api_info['last_name']}"
