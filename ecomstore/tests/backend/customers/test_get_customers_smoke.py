@@ -2,7 +2,7 @@
 import pytest
 from ecomstore.src.api_helpers.CustomersAPIHelper import CustomersAPIHelper
 
-pytestmarks = [pytest.mark.regression, pytest.mark.besmoke, pytest.mark.customers]
+pytestmarks = [pytest.mark.regression, pytest.mark.beregression, pytest.mark.besmoke, pytest.mark.customers]
 
 @pytest.mark.besmoke
 @pytest.mark.tcid30

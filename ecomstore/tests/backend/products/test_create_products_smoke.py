@@ -30,7 +30,7 @@ def test_create_1_simple_product():
 
     product_id = products_rs['id']
     db_product = ProductsDao().get_product_by_id(product_id)
-    breakpoint()
+
     assert payload['name'] == db_product[0]['post_title'], f"Create product, title in db does not match" \
                                                            f"title in api. DB: {db_product(0)['post_title']}, API: {payload['name']}"
 

@@ -17,9 +17,10 @@ class ProductsDao:
         :return:
         """
         logger.info(f"Getting random products from db qty={qty}")
-        sql = """SELECT ID, post_title, post_name FROM
-        quicksitedb.wp_posts WHERE post_type=
-        "product" LIMIT 5000;"""
+
+        sql = f"""SELECT ID, post_title, post_name FROM
+        {self.database}.{self.table_prefix}posts WHERE post_type=
+        "product" LIMIT 100;"""
         rs_sql = self.db_helper.execute_select(sql)
         logger.debug(f"found{len(rs_sql)} random products from DB.")
 
