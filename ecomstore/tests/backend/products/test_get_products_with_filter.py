@@ -4,8 +4,8 @@ from ecomstore.src.api_helpers.ProductsAPIHelper import ProductsAPIHelper
 import pytest
 from datetime import datetime, timedelta
 
+pytestmark = [pytest.mark.products, pytest.mark.smoke, pytest.mark.beregression]
 
-@pytest.mark.regression
 class TestListProductsWithFilter(object):
 
     @pytest.mark.tcid51
