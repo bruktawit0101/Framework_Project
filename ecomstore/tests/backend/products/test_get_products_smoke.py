@@ -3,7 +3,11 @@ from ecomstore.src.api_helpers.ProductsAPIHelper import ProductsAPIHelper
 import pytest
 import logging as logger
 
+<<<<<<< HEAD
 pytestmarks = [pytest.mark.regression, pytest.mark.beregression, pytest.mark.besmoke, pytest.mark.customers]
+=======
+pytestmark = [pytest.mark.products, pytest.mark.smoke, pytest.mark.beregression]
+>>>>>>> fb3a5983d89754f1c31ab3174a634ddfdbbf94b1
 
 @pytest.mark.tcid25
 @pytest.mark.qactcid11

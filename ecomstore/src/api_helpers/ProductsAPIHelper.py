@@ -44,5 +44,9 @@ class ProductsAPIHelper:
             all_products.extend(rs_api['response_json'])
 
         return {"response_json": all_products, "headers": headers}
+    def call_update_product(self, product_id, payload=None):
+        return self.woo_api_utility.put(f'products/{product_id}', params=payload)
 
+    def call_retrieve_product(self, product_id):
+        return self.woo_api_utility.get(f'products/{product_id}')
 
