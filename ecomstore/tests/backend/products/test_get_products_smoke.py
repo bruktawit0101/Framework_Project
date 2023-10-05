@@ -3,6 +3,8 @@ from ecomstore.src.api_helpers.ProductsAPIHelper import ProductsAPIHelper
 import pytest
 import logging as logger
 
+pytestmarks = [pytest.mark.regression, pytest.mark.beregression, pytest.mark.besmoke, pytest.mark.customers]
+
 @pytest.mark.tcid25
 @pytest.mark.qactcid11
 def test_get_product_by_id():

@@ -4,7 +4,7 @@ from ecomstore.src.utilities.genericUtility import generate_random_string
 from ecomstore.src.api_helpers.ProductsAPIHelper import ProductsAPIHelper
 from ecomstore.src.dao.products_deo import ProductsDao
 
-pytestmark = [pytest.mark.products, pytest.mark.smoke, pytest.mark.BE]
+pytestmarks = [pytest.mark.regression, pytest.mark.beregression, pytest.mark.besmoke, pytest.mark.customers]
 
 @pytest.mark.tcid26
 @pytest.mark.qactcid10
