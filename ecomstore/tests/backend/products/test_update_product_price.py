@@ -3,7 +3,7 @@ import pytest
 from ecomstore.src.dao.products_deo import ProductsDao
 from ecomstore.src.api_helpers.ProductsAPIHelper import ProductsAPIHelper
 
-pytestmark = [pytest.mark.products, pytest.mark.beregression]
+pytestmarks = [pytest.mark.products, pytest.mark.beregression]
 
 @pytest.mark.tcid61
 @pytest.mark.qatcid13
@@ -32,7 +32,7 @@ def test_update_regular_price_should_update_price():
 
    # make the update to 'regular_price'
 
-    new_price = str(random.randint(10, 100))+ '.' + str(random.randint(10, 99))
+    new_price = str(random.randint(10, 100)) + '.' + str(random.randint(10, 99))
     payload = dict()
     payload['regular_price'] = new_price
 
@@ -50,9 +50,9 @@ def test_update_regular_price_should_update_price():
 
     rs_product = product_helper.call_retrieve_product(product_id)
 
-    assert rs_product['price'] == new_price, f"Update product api call response. Updating the 'regular_price' did not " \
-                                    f"Update the 'price' field. Price field actual value {rs_product['price']}, "\
-                                    f"but expected: {new_price}"
-    assert rs_update['regular_price'] == new_price,f"Update product api call response. Updating the 'regular_price' did not " \
-                                    f"Update. Actual 'regular_price'= {rs_product['price']}, "\
-                                    f"but expected: {new_price}"
+    assert rs_product['price'] == new_price, f"Update product api call response. Updating the 'regular_price' did not "\
+                                             f"Update the 'price' field. Price field actual value {rs_product['price']}"\
+                                             f"but expected: {new_price}"
+    assert rs_update['regular_price'] == new_price, f"Update product api call response. Updating the 'regular_price' did not "\
+                                                    f"Update. Actual 'regular_price'= {rs_product['price']}, "\
+                                                    f"but expected: {new_price}"
